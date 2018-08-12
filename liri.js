@@ -1,7 +1,9 @@
 
-
+var keys = require("./keys.js");
 require("dotenv").config();
 var request = require("request");
+var Spotify = require('node-spotify-api');
+var fs = require('fs');
 
 //Add the code required to import the keys.js file and store it in a variable.
 
@@ -21,17 +23,18 @@ Make it so liri.js can take in one of the following commands:
 
 if else or swich statement
 */
-if(command == "moviethis") {
+if(command == "movie-this") {
     console.log(command);
     moviethis(name);
 }
 
-if(command == "spotifythissong") {
+if(command == "spotify-this-song") {
     console.log(command);
-    spotifythissong(song_name);
+    spotifythissong(name);
 }
 
-    
+
+
 
 
 
@@ -41,17 +44,26 @@ if(command == "spotifythissong") {
 //create function
 function mytweets() {
     //This will show your last 20 tweets and when they were created at in your terminal/bash window.
+
 }
 
-function spotifythissong(song_name) {
-
-    request("https://api.spotify.com/v1/tracks/7yCPwWs66K8Ba5lFuU2bcx)", function(error, response, body) {
-
-  // If the request was successful...
-  if (!error && response.statusCode === 200) {
-
-    console.log(response);
-    
+function spotifythissong(name) {
+    var spotify = new Spotify(keys.spotify);
+        if (!name){
+            name = 'The Weeknd';
+        }
+        spotify.search({ type: 'track', query: inputs }, function(err, data) {
+            if (err){
+                console.log('Error occurred: ' + err);
+                return;
+            }
+            var songInfo = data.tracks.items;
+            console.log("Artist(s): " + songInfo[0].artists[0].name);
+            console.log("Song Name: " + songInfo[0].name);
+            console.log("Preview Link: " + songInfo[0].preview_url);
+            console.log("Album: " + songInfo[0].album.name);
+    });
+}//end of function
   
 
 
@@ -66,8 +78,7 @@ function spotifythissong(song_name) {
 
 
 
-    }
-});//end of request function
+   
     
     //This will show the following information about the song in your terminal/bash window
 
@@ -78,7 +89,7 @@ function spotifythissong(song_name) {
 
     //If no song is provided then your program will default to "The Sign" by Ace of Base.
 
-}///end of function
+
 
 function moviethis (movie_name) {
 
@@ -99,6 +110,7 @@ function moviethis (movie_name) {
     console.log("The movie's plot is: " + movieParse(response.body).Plot);
     console.log("The movie's actors is: " + movieParse(response.body).Actors);
     console.log("The movie's metasore is: " + movieParse(response.body).Metascore);
+
   
   }
 });//end of request function
@@ -132,3 +144,4 @@ function dowhatitsays () {
     //Feel free to change the text in that document to test out the feature for other commands.//
     
 }
+
