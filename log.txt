@@ -1,0 +1,19 @@
+
+****************************** SPOTIFY THIS SONG *******************************
+Spotify could not find a song with that title. Please try Again.
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Spotify could not find a song with that title. Please try Again.
+********************************************************************************
+
+********************************** MOVIE THIS **********************************
+Title: Terminator
+Release Year: 2001
+IMDB Rating: 4.7
+Rotten Tomatoes Rating: No Rotten Tomatoes Rating
+Country movie produced in: USA
+Language: English
+Plot: N/A
+Actors: Joshua Miller
+********************************************************************************
