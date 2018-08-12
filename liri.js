@@ -13,7 +13,7 @@ var fs = require("fs");
 // access keys.js to get TWITTER and SPOTIFY api access
 //var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
-//var client = new Twitter(keys.twitter);
+var client = new Twitter(keys.twitter);
 
 var command = process.argv[2];
 var name = process.argv[3];
@@ -59,14 +59,29 @@ if(command == "my-tweets") {
 
 //create function
 function mytweets() {
-    //This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
-    
-
-        
-        
-
+    var params = {
+        screen_name: 'Peterphu2',
+        count: 20
     };
+    client.get('statuses/user_timeline', params, function (error, tweets, response) {
+        if (!error) {
+            
+            for (i = 0; i < tweets.length; i++) {
+                var logTweets = i + 1 + ". Tweet: " + tweets[i].text + "\n    Created: " + tweets[i].created_at;
+                console.log(logTweets);
+                
+                
+                
+            };//end of for loop
+        };//end if if statment
+    });//end of client get
+};//end of function
+
+        
+        
+
+
 
 function spotifythissong(name) {
     
@@ -125,35 +140,28 @@ function moviethis (movie_name) {
 
   // If the request is successful (i.e. if the response status code is 200)
   if (!error && response.statusCode === 200) {
+      
         
 
     // Parse the body of the site and recover just the imdbRating
     // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
 
-    
-    console.log("The movie's rating is: " + movieParse(response.body).imdbRating);
-    console.log("The movie's title is: " + movieParse(response.body).Title);
-    console.log("The movie's year is: " + movieParse(response.body).Year);
-    console.log("The movie's country is: " + movieParse(response.body).Country);
-    console.log("The movie's language is: " + movieParse(response.body).Language);
-    console.log("The movie's plot is: " + movieParse(response.body).Plot);
-    console.log("The movie's actors is: " + movieParse(response.body).Actors);
-    console.log("The movie's metasore is: " + movieParse(response.body).Metascore);
+    console.log("\nRating: " + movieParse(response.body).imdbRating);
+    console.log("\nTitle: " + movieParse(response.body).Title);
+    console.log("\nYear: " + movieParse(response.body).Year);
+    console.log("\nCountry: " + movieParse(response.body).Country);
+    console.log("\nLanguage: " + movieParse(response.body).Language);
+    console.log("\nPlot: " + movieParse(response.body).Plot);
+    console.log("\nActors: " + movieParse(response.body).Actors);
+    console.log("\nMetascore: " + movieParse(response.body).Metascore);
 
   
   }
+
+  
 });//end of request function
 
-function movie() {
-    if (name === undefined) {
-        title = "Mr.+Nobody";
-        moviethis();
-    } else if (title !== undefined) {
-        titleSplit = title.split(" ");
-        title = titleSplit.join("+");
-        moviethis();
-    };
-};
+
 
     // You'll use the request package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use trilogy.
     /*
@@ -177,24 +185,23 @@ function movie() {
 function dowhatitsays () {
     
     //Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.//
-    fs.readFile('random.txt', "utf8", function(error, data){
-        if (error) {
-            return console.log(error);
-        }
-        var dataArr = data.split(",");
-        if (dataArr[0] === "spotify-this-song") {
-            var check = dataArr[1].slice(1, -1);
-            spotify(check);
-        } else if (dataArr[0] === "my-tweets") {
-            var tweetname = dataArr[1].slice(1, -1);
-            twitter(tweetname);
-        } else if(dataArr[0] === "movie-this") {
-            var movie_name = dataArr[1].slice(1, -1);
-            movie(movie_name);
-        } 
-        
+    fs.readFile("random.txt", "utf8", function (err, data) {
+        if (err) {
+            var logDoIt = ("\n************************** Do-What-It-Says *****************************\nThere was a problem reading the random.txt file. Please try again.\n********************************************************************************");
+            return console.log(logDoIt);
+            
+        };
+
+        var output = data.split(",");
+        action = output[0];
+        process.argv[3] = output[1];
+        title = process.argv[3];
+
+        if (action === 'spotify-this-song') {
+            spotifythissong();
+        };
     });
-}
+};
 
 
     //It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.//
