@@ -12,12 +12,13 @@ var fs = require("fs");
 
 
 // access keys.js to get TWITTER and SPOTIFY api access
-//var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
 
 var command = process.argv[2];
 var name = process.argv[3];
+
+
  
 /*
 Make it so liri.js can take in one of the following commands:
@@ -52,12 +53,6 @@ if(command == "my-tweets") {
 
 
 
-
-
-
-
-
-
 //create function
 function mytweets() {
 
@@ -78,19 +73,17 @@ function mytweets() {
                     };
                 });
                 
-                
-                
-                
             };//end of for loop
         };//end if if statment
     });//end of client get
 };//end of function
 
 
-function spotifythissong() {
+function spotifythissong(name) {
+    var title = name
     spotify.search({
         type: 'track',
-        query: name,
+        query: title,
         limit: 1,
     }, function (err, data) {
         if (data) {
@@ -120,26 +113,6 @@ function spotifythissong() {
     });
 };
         
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-    
     //This will show the following information about the song in your terminal/bash window
 
     //Artist(s)
@@ -223,7 +196,7 @@ function dowhatitsays() {
         title = process.argv[3];
 
         if (action === 'spotify-this-song') {
-            spotifythissong();
+            spotifythissong(title);
         };
     });
 };
