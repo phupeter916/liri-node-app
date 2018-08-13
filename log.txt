@@ -208,4 +208,279 @@ Rotten Tomatoes Rating: No Rotten Tomatoes Rating
 Country movie produced in: Germany, USA
 Language: English, Burmese, Thai
 Plot: In Thailand, John Rambo joins a group of mercenaries to venture into war-torn Burma, and rescue a group of Christian aid workers who were kidnapped by the ruthless local infantry unit.
-Actors: Sylvester Stallone, Julie Benz, Matthew Marsden, Graham McTavish
+Actors: Sylvester Stallone, Julie Benz, Matthew Marsden, Graham McTavish1. Tweet: laflajejfjaeja
+    Created: Sun Aug 12 22:07:48 +0000 2018
+********************************************************************************
+2. Tweet: testing
+    Created: Sun Aug 12 22:07:44 +0000 2018
+********************************************************************************
+3. Tweet: yo
+    Created: Sun Aug 12 22:07:37 +0000 2018
+********************************************************************************
+4. Tweet: alfjelajjfajfea
+    Created: Sun Aug 12 22:07:32 +0000 2018
+********************************************************************************
+5. Tweet: aflejalfjajeajefa
+    Created: Sun Aug 12 22:07:28 +0000 2018
+********************************************************************************
+6. Tweet: aflejaljfajfejea
+    Created: Sun Aug 12 22:07:25 +0000 2018
+********************************************************************************
+7. Tweet: alfjlfjejafjajajelfa
+    Created: Sun Aug 12 22:07:21 +0000 2018
+********************************************************************************
+8. Tweet: ldjalfajfeja
+    Created: Sun Aug 12 22:07:17 +0000 2018
+********************************************************************************
+9. Tweet: 1223344
+    Created: Sun Aug 12 22:07:14 +0000 2018
+********************************************************************************
+10. Tweet: Bootcamp
+    Created: Sun Aug 12 22:07:09 +0000 2018
+********************************************************************************
+11. Tweet: Testing
+    Created: Sun Aug 12 22:06:57 +0000 2018
+********************************************************************************
+12. Tweet: dafjljfjajef
+    Created: Sun Aug 12 22:06:53 +0000 2018
+********************************************************************************
+13. Tweet: alajfajfjeaj;eaf
+    Created: Sun Aug 12 22:06:48 +0000 2018
+********************************************************************************
+14. Tweet: yo dude
+    Created: Sun Aug 12 22:06:43 +0000 2018
+********************************************************************************
+15. Tweet: whats cracking?
+    Created: Sun Aug 12 22:06:38 +0000 2018
+********************************************************************************
+16. Tweet: laflj;lejal
+    Created: Sun Aug 12 22:06:25 +0000 2018
+********************************************************************************
+17. Tweet: helllo
+    Created: Sun Aug 12 22:06:17 +0000 2018
+********************************************************************************
+18. Tweet: test
+    Created: Sun Aug 12 22:06:11 +0000 2018
+********************************************************************************
+1. Tweet: laflajejfjaeja
+    Created: Sun Aug 12 22:07:48 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }2. Tweet: testing
+    Created: Sun Aug 12 22:07:44 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }3. Tweet: yo
+    Created: Sun Aug 12 22:07:37 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }4. Tweet: alfjelajjfajfea
+    Created: Sun Aug 12 22:07:32 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }5. Tweet: aflejalfjajeajefa
+    Created: Sun Aug 12 22:07:28 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }6. Tweet: aflejaljfajfejea
+    Created: Sun Aug 12 22:07:25 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }7. Tweet: alfjlfjejafjajajelfa
+    Created: Sun Aug 12 22:07:21 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }8. Tweet: ldjalfajfeja
+    Created: Sun Aug 12 22:07:17 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }9. Tweet: 1223344
+    Created: Sun Aug 12 22:07:14 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }10. Tweet: Bootcamp
+    Created: Sun Aug 12 22:07:09 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }11. Tweet: Testing
+    Created: Sun Aug 12 22:06:57 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }12. Tweet: dafjljfjajef
+    Created: Sun Aug 12 22:06:53 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }13. Tweet: alajfajfjeaj;eaf
+    Created: Sun Aug 12 22:06:48 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }14. Tweet: yo dude
+    Created: Sun Aug 12 22:06:43 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }15. Tweet: whats cracking?
+    Created: Sun Aug 12 22:06:38 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }16. Tweet: laflj;lejal
+    Created: Sun Aug 12 22:06:25 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }17. Tweet: helllo
+    Created: Sun Aug 12 22:06:17 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }18. Tweet: test
+    Created: Sun Aug 12 22:06:11 +0000 2018function (err) {
+                    if (err) {
+                        return console.log("Twitter data was not appended to the log.txt file.");
+                    };
+                }1. Tweet: laflajejfjaeja
+    Created: Sun Aug 12 22:07:48 +0000 2018
+********************************************************************************
+2. Tweet: testing
+    Created: Sun Aug 12 22:07:44 +0000 2018
+********************************************************************************
+3. Tweet: yo
+    Created: Sun Aug 12 22:07:37 +0000 2018
+********************************************************************************
+4. Tweet: alfjelajjfajfea
+    Created: Sun Aug 12 22:07:32 +0000 2018
+********************************************************************************
+5. Tweet: aflejalfjajeajefa
+    Created: Sun Aug 12 22:07:28 +0000 2018
+********************************************************************************
+6. Tweet: aflejaljfajfejea
+    Created: Sun Aug 12 22:07:25 +0000 2018
+********************************************************************************
+7. Tweet: alfjlfjejafjajajelfa
+    Created: Sun Aug 12 22:07:21 +0000 2018
+********************************************************************************
+8. Tweet: ldjalfajfeja
+    Created: Sun Aug 12 22:07:17 +0000 2018
+********************************************************************************
+9. Tweet: 1223344
+    Created: Sun Aug 12 22:07:14 +0000 2018
+********************************************************************************
+10. Tweet: Bootcamp
+    Created: Sun Aug 12 22:07:09 +0000 2018
+********************************************************************************
+11. Tweet: Testing
+    Created: Sun Aug 12 22:06:57 +0000 2018
+********************************************************************************
+12. Tweet: dafjljfjajef
+    Created: Sun Aug 12 22:06:53 +0000 2018
+********************************************************************************
+13. Tweet: alajfajfjeaj;eaf
+    Created: Sun Aug 12 22:06:48 +0000 2018
+********************************************************************************
+14. Tweet: yo dude
+    Created: Sun Aug 12 22:06:43 +0000 2018
+********************************************************************************
+15. Tweet: whats cracking?
+    Created: Sun Aug 12 22:06:38 +0000 2018
+********************************************************************************
+16. Tweet: laflj;lejal
+    Created: Sun Aug 12 22:06:25 +0000 2018
+********************************************************************************
+17. Tweet: helllo
+    Created: Sun Aug 12 22:06:17 +0000 2018
+********************************************************************************
+18. Tweet: test
+    Created: Sun Aug 12 22:06:11 +0000 2018
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Imagine Dragons
+Song title: Thunder
+Album name: Evolve
+URL Preview: null
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Backstreet Boys
+Song title: I Want It That Way
+Album name: The Hits--Chapter One
+URL Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=34e84d93de6a4650815e5420e0361fd3
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Backstreet Boys
+Song title: I Want It That Way
+Album name: The Hits--Chapter One
+URL Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=34e84d93de6a4650815e5420e0361fd3
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Meghan Trainor
+Song title: Like I'm Gonna Lose You
+Album name: Title (Deluxe)
+URL Preview: https://p.scdn.co/mp3-preview/f0572ce757b4ded30a1a9ce5bd3edc368ee175f0?cid=34e84d93de6a4650815e5420e0361fd3
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Meghan Trainor
+Song title: Like I'm Gonna Lose You
+Album name: Title (Deluxe)
+URL Preview: https://p.scdn.co/mp3-preview/f0572ce757b4ded30a1a9ce5bd3edc368ee175f0?cid=34e84d93de6a4650815e5420e0361fd3
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Backstreet Boys
+Song title: I Want It That Way
+Album name: The Hits--Chapter One
+URL Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=34e84d93de6a4650815e5420e0361fd3
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Backstreet Boys
+Song title: I Want It That Way
+Album name: The Hits--Chapter One
+URL Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=34e84d93de6a4650815e5420e0361fd3
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Imagine Dragons
+Song title: Thunder
+Album name: Evolve
+URL Preview: null
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Imagine Dragons
+Song title: Thunder
+Album name: Evolve
+URL Preview: null
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: SF9
+Song title: Dear Fantasy
+Album name: SF9 4th Mini Album [ MAMMA MIA! ]
+URL Preview: https://p.scdn.co/mp3-preview/3dcfb908d8382dad90a31f383ec8bc014633963a?cid=34e84d93de6a4650815e5420e0361fd3
+********************************************************************************
+
+****************************** SPOTIFY THIS SONG *******************************
+Artist: Imagine Dragons
+Song title: Thunder
+Album name: Evolve
+URL Preview: null
+********************************************************************************
