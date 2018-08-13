@@ -88,23 +88,23 @@ function spotifythissong(name) {
     }, function (err, data) {
         if (data) {
             var info = data.tracks.items
-            var logSpotify =
+            var logSong =
                 "\n****************************** SPOTIFY THIS SONG *******************************\nArtist: " + info[0].artists[0].name +
                 "\nSong title: " + info[0].name +
                 "\nAlbum name: " + info[0].album.name +
                 "\nURL Preview: " + info[0].preview_url +
                 "\n********************************************************************************\n";
-            console.log(logSpotify)
-            fs.appendFile("log.txt", logSpotify, function (err) {
+            console.log(logSong)
+            fs.appendFile("log.txt", logSong, function (err) {
                 if (err) {
                     return console.log("Spotify song data was not appended to the log.txt file.");
                 };
             });
         } else if (err) {
-            var logNoSpotify =
+            var logNoSong =
                 "\n****************************** SPOTIFY THIS SONG *******************************\nSpotify could not find a song with that title. Please try Again.\n********************************************************************************\n";
-            console.log(logNoSpotify);
-            fs.appendFile("log.txt", logNoSpotify, function (err) {
+            console.log(logNoSong);
+            fs.appendFile("log.txt", logNoSong, function (err) {
                 if (err) {
                     return console.log("Spotify no song data found was not appended to the log.txt file.");
                 };
@@ -138,16 +138,24 @@ function moviethis (movie_name) {
 
     // Parse the body of the site and recover just the imdbRating
     // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
-    console.log("\n************************************** Movie-This *****************************************************************");
-    console.log("\nRating: " + movieParse(response.body).imdbRating);
-    console.log("\nTitle: " + movieParse(response.body).Title);
-    console.log("\nYear: " + movieParse(response.body).Year);
-    console.log("\nCountry: " + movieParse(response.body).Country);
-    console.log("\nLanguage: " + movieParse(response.body).Language);
-    console.log("\nPlot: " + movieParse(response.body).Plot);
-    console.log("\nActors: " + movieParse(response.body).Actors);
-    console.log("\nMetascore: " + movieParse(response.body).Metascore);
-    console.log("\n************************************** Movie-This *****************************************************************");
+    var movieData =
+    "\n************************************** Movie-This *****************************************************************\nRating: " + movieParse(response.body).imdbRating +
+    "\nTitle: " + movieParse(response.body).Title +
+    "\nYear: " + movieParse(response.body).Year +
+    "\nCountry: " + movieParse(response.body).Country +
+    "\nLanguage: " + movieParse(response.body).Language +
+    "\nPlot: " + movieParse(response.body).Plot +
+    "\nActors: " + movieParse(response.body).Actors +
+    "\nMetascore: " + movieParse(response.body).Metascore +
+    "\n*******************************************************************************************************\n";
+    console.log(movieData);
+
+    fs.appendFile("log.txt", movieData, function (err) {
+        if (err) {
+            return console.log("Movie data did not append to log.txt file.");
+        };
+    });
+    return
 
   
   }
